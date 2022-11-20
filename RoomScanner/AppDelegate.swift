@@ -11,9 +11,22 @@ import RoomPlan
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    @UserDefault("isFirstLaunch")
+    var isFirstLaunch: Bool = true
+    
     private enum ConfigurationType: String {
-        case hasLidar = "Default Configuration"
+        case firstLaunch = "Default Configuration"
+        case scanner = "Scanner Configuration"
         case unsupported = "Unsupported Device"
+        
+        init(for isFirstLaunch: Bool) {
+            guard RoomCaptureSession.isSupported else {
+                self = .unsupported
+                return
+            }
+            
+            self = isFirstLaunch ? .firstLaunch : .scanner
+        }
     }
     
     func application(
@@ -29,8 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configurationForConnecting connectingSceneSession: UISceneSession,
         options: UIScene.ConnectionOptions
     ) -> UISceneConfiguration {
-        let configurationName = RoomCaptureSession.isSupported ?
-            ConfigurationType.hasLidar.rawValue : ConfigurationType.unsupported.rawValue
+        let configurationName = ConfigurationType(for: isFirstLaunch).rawValue
         
         return UISceneConfiguration(name: configurationName, sessionRole: connectingSceneSession.role)
     }

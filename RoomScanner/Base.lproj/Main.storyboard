@@ -1,24 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tc4-en-mrZ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Onboarding View Controller-->
+        <scene sceneID="yiC-z1-jL8">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                <viewController storyboardIdentifier="OnboardingViewController" id="Tc4-en-mrZ" customClass="OnboardingViewController" customModule="RoomPlanExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="muL-1e-KYP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByV-C5-dmd">
+                                <rect key="frame" x="40" y="245" width="313" height="174.33333333333337"/>
+                                <string key="text">To scan your room, point your device at all the walls, windows, doors and furniture in your space until your scan is complete.
+
+You can see a preview of your scan at the bottom of the screen so you can make sure your scan is correct. </string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RoomScanner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QER-IR-RK5">
+                                <rect key="frame" x="84.666666666666686" y="189" width="224" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="bih-ab-lqu">
+                                <rect key="frame" x="96.666666666666686" y="735" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="W3L-Sp-GfX"/>
+                                    <constraint firstAttribute="height" constant="50" id="X99-ef-vcD"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Scanning" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startScan:" destination="Tc4-en-mrZ" eventType="touchUpInside" id="qqB-Xh-thp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FCi-U2-uLb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ByV-C5-dmd" firstAttribute="leading" secondItem="muL-1e-KYP" secondAttribute="leading" constant="40" id="4Tu-u1-kt0"/>
+                            <constraint firstItem="bih-ab-lqu" firstAttribute="centerX" secondItem="muL-1e-KYP" secondAttribute="centerX" id="KmP-sx-p7n"/>
+                            <constraint firstItem="QER-IR-RK5" firstAttribute="centerX" secondItem="muL-1e-KYP" secondAttribute="centerX" id="M5Z-2r-Sgf"/>
+                            <constraint firstAttribute="trailing" secondItem="ByV-C5-dmd" secondAttribute="trailing" constant="40" id="M7i-hN-g1F"/>
+                            <constraint firstItem="FCi-U2-uLb" firstAttribute="bottom" secondItem="bih-ab-lqu" secondAttribute="bottom" constant="33" id="PxN-iN-hME"/>
+                            <constraint firstItem="ByV-C5-dmd" firstAttribute="centerX" secondItem="muL-1e-KYP" secondAttribute="centerX" id="eJ1-rX-CWm"/>
+                            <constraint firstItem="ByV-C5-dmd" firstAttribute="top" secondItem="QER-IR-RK5" secondAttribute="bottom" constant="15" id="oBB-XF-P6S"/>
+                            <constraint firstItem="QER-IR-RK5" firstAttribute="top" secondItem="FCi-U2-uLb" secondAttribute="top" constant="130" id="zUG-Qt-CvK"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qA3-M6-7qn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1593" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

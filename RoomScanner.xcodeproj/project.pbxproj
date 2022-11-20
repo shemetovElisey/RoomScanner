@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		3C80AAF1292A222300BED656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80AAF0292A222300BED656 /* AppDelegate.swift */; };
 		3C80AAF3292A222300BED656 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80AAF2292A222300BED656 /* SceneDelegate.swift */; };
-		3C80AAF5292A222300BED656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80AAF4292A222300BED656 /* ViewController.swift */; };
+		3C80AAF5292A222300BED656 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80AAF4292A222300BED656 /* OnboardingViewController.swift */; };
 		3C80AAF8292A222300BED656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C80AAF6292A222300BED656 /* Main.storyboard */; };
 		3C80AAFA292A222400BED656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C80AAF9292A222400BED656 /* Assets.xcassets */; };
 		3C80AAFD292A222400BED656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C80AAFB292A222400BED656 /* LaunchScreen.storyboard */; };
 		3C80AB05292A250000BED656 /* UnsupportedDevice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C80AB04292A250000BED656 /* UnsupportedDevice.storyboard */; };
+		3C80AB07292A275D00BED656 /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80AB06292A275D00BED656 /* UserDefaultsWrapper.swift */; };
+		3C80AB0C292A31B700BED656 /* RoomScanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C80AB0B292A31B700BED656 /* RoomScanner.storyboard */; };
+		3C80AB0E292A336F00BED656 /* RoomCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80AB0D292A336F00BED656 /* RoomCaptureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C80AAED292A222300BED656 /* RoomScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C80AAF0292A222300BED656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C80AAF2292A222300BED656 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C80AAF4292A222300BED656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C80AAF4292A222300BED656 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		3C80AAF7292A222300BED656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C80AAF9292A222400BED656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C80AAFC292A222400BED656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C80AAFE292A222400BED656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C80AB04292A250000BED656 /* UnsupportedDevice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UnsupportedDevice.storyboard; sourceTree = "<group>"; };
+		3C80AB06292A275D00BED656 /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
+		3C80AB0B292A31B700BED656 /* RoomScanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoomScanner.storyboard; sourceTree = "<group>"; };
+		3C80AB0D292A336F00BED656 /* RoomCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +66,25 @@
 			children = (
 				3C80AAF0292A222300BED656 /* AppDelegate.swift */,
 				3C80AAF2292A222300BED656 /* SceneDelegate.swift */,
-				3C80AAF4292A222300BED656 /* ViewController.swift */,
+				3C80AAF4292A222300BED656 /* OnboardingViewController.swift */,
+				3C80AB0D292A336F00BED656 /* RoomCaptureViewController.swift */,
+				3C80AB0A292A2E2900BED656 /* Common */,
 				3C80AAF6292A222300BED656 /* Main.storyboard */,
 				3C80AAF9292A222400BED656 /* Assets.xcassets */,
 				3C80AB04292A250000BED656 /* UnsupportedDevice.storyboard */,
+				3C80AB0B292A31B700BED656 /* RoomScanner.storyboard */,
 				3C80AAFB292A222400BED656 /* LaunchScreen.storyboard */,
 				3C80AAFE292A222400BED656 /* Info.plist */,
 			);
 			path = RoomScanner;
+			sourceTree = "<group>";
+		};
+		3C80AB0A292A2E2900BED656 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3C80AB06292A275D00BED656 /* UserDefaultsWrapper.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C80AB0C292A31B700BED656 /* RoomScanner.storyboard in Resources */,
 				3C80AB05292A250000BED656 /* UnsupportedDevice.storyboard in Resources */,
 				3C80AAFD292A222400BED656 /* LaunchScreen.storyboard in Resources */,
 				3C80AAFA292A222400BED656 /* Assets.xcassets in Resources */,
@@ -142,9 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C80AAF5292A222300BED656 /* ViewController.swift in Sources */,
+				3C80AAF5292A222300BED656 /* OnboardingViewController.swift in Sources */,
+				3C80AB07292A275D00BED656 /* UserDefaultsWrapper.swift in Sources */,
 				3C80AAF1292A222300BED656 /* AppDelegate.swift in Sources */,
 				3C80AAF3292A222300BED656 /* SceneDelegate.swift in Sources */,
+				3C80AB0E292A336F00BED656 /* RoomCaptureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
