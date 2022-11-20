@@ -13,6 +13,7 @@
 		3C80AAF8292A222300BED656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C80AAF6292A222300BED656 /* Main.storyboard */; };
 		3C80AAFA292A222400BED656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C80AAF9292A222400BED656 /* Assets.xcassets */; };
 		3C80AAFD292A222400BED656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C80AAFB292A222400BED656 /* LaunchScreen.storyboard */; };
+		3C80AB05292A250000BED656 /* UnsupportedDevice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C80AB04292A250000BED656 /* UnsupportedDevice.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3C80AAF9292A222400BED656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C80AAFC292A222400BED656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C80AAFE292A222400BED656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C80AB04292A250000BED656 /* UnsupportedDevice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UnsupportedDevice.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				3C80AAF4292A222300BED656 /* ViewController.swift */,
 				3C80AAF6292A222300BED656 /* Main.storyboard */,
 				3C80AAF9292A222400BED656 /* Assets.xcassets */,
+				3C80AB04292A250000BED656 /* UnsupportedDevice.storyboard */,
 				3C80AAFB292A222400BED656 /* LaunchScreen.storyboard */,
 				3C80AAFE292A222400BED656 /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C80AB05292A250000BED656 /* UnsupportedDevice.storyboard in Resources */,
 				3C80AAFD292A222400BED656 /* LaunchScreen.storyboard in Resources */,
 				3C80AAFA292A222400BED656 /* Assets.xcassets in Resources */,
 				3C80AAF8292A222300BED656 /* Main.storyboard in Resources */,
